@@ -4,15 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <!-- <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title> -->
+    <title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <link rel="shortcut icon" href="{{ site.icon | relative_url }}">
 
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/montserrat.css">
-
-    <!-- <script src="{{ site.url }}js/jquery-2.2.0.js"></script>
-    <script src="{{ site.url }}js/main.js"></script>
-    <script src="{{ site.url }}js/gallery.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/main.css' | relative_url }} "/>
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/montserrat.css' | relative_url }} "/>
 
 
     </head>

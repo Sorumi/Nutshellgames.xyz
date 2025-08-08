@@ -33,8 +33,10 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 collections:
   products:
     output: true
+    permalink: /:collection/:name
 
 languages: ["en"]
 active_lang: "zh"
-permalink: pretty
+# permalink: pretty
+permalink: /:title
 
