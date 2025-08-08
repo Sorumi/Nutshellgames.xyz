@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<section id="posts" class="w-full hmin-screen  header-next">
+    <div class="posts-wrapper container">
+        <!-- <div class="flex flex-row justify-between">
+            <h2 class="posts-title text-m">
+                {{ page.title }}
+            </h2>
+        </div> -->
+
+        <div class="posts-grid grid grid-cols-1">
+            {% for product in site.products %}
+            {% include product_card.html product=product %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

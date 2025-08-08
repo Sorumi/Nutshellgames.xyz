@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<section id="home-main" class="w-full h-screen">
+
+    {% assign product = site.products | first %}
+    {% if product %}
+
+    <div class="container h-full flex flex-row sm:flex-col items-center justify-center">
+        <div class="home-product-img-icon">
+            <img class="w-full h-full" src="{{ product.icon | relative_url }}" />
+        </div>
+        <div class="home-product-intro">
+            <img class="home-product-logo" src="{{ product.logo | relative_url }}" />
+            <div class="home-product-text">
+                {{ product.description }}
+            </div>
+        </div>
+    </div>
+
+    {% endif %}
+</section>
+
+<section id="home-post" class="w-full">
+    <div class="posts-wrapper container">
+        <div class="posts-wrapper-title flex flex-row justify-between">
+
+            <h2 class="posts-title text-m">
+                {{ site.data[site.active_lang].strings.home.post_title }}
+            </h2>
+
+            {% assign posts_page = site.pages | where: 'layout', 'posts' | first %}
+            {% if posts_page %}
+
+            <a class="posts-more text-m" href="{{ posts_page.url | relative_url}}">
+                {{ site.data[site.active_lang].strings.home.see_more_posts }}
+            </a>
+
+            {% endif %}
+        </div>
+
+        <div class="posts-grid grid sm:grid-cols-1 grid-cols-3">
+            {% for post in site.posts limit:3 %}
+            {% include post_card.html post=post %}
+            {% endfor %}
+        </div>
+
+    </div>
+</section>

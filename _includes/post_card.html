@@ -1,0 +1,30 @@
+<div class="post-card card card-shadow flex flex-col justify-between">
+
+    <div class="flex flex-col justify-between">
+
+        <a href="{{include.post.url | relative_url}}">
+            <div class="post-card-image w-full aspect-100 bg-cover bg-center"
+                style="background-image: url('{{ include.post.image }}')">
+            </div>
+        </a>
+
+        <a href="{{ include.post.url | relative_url }}"">
+            <h2 class="post-card-title text-l">
+                {{ include.post.title }}
+            </h2>
+        </a>
+
+    </div>
+
+    <div class="flex flex-col justify-between">
+
+        <span class="post-card-category text-s">
+            {{ include.post.category }}
+        </span>
+
+        <span class="post-card-date text-s">
+            {{ include.post.date | date: "%Y.%m.%d" }}
+        </span>
+    </div>
+
+</div>

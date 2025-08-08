@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<section id="post" class="w-full hmin-screen header-next">
+	<div class="card-wrapper container">
+
+		<div class="card card-shadow">
+
+			<h2 class="post-title text-l">{{ page.title }}</h2>
+			<div class="post-category text-s">{{ page.category }}</div>
+			<div class="post-date text-s">{{ page.date | date: "%Y.%m.%d" }}</div>
+
+			{% if page.images %}
+			<div class="post-image-grid grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
+				{% for image in page.images %}
+
+				<a href="{{ image.path | relative_url }}" target="_blank" ref="noopener noreferrer">
+					<div class="post-image aspect-100 bg-cover bg-center"
+						style="background-image: url('{{ image.path }}')">
+					</div>
+				</a>
+
+				{% endfor %}
+			</div>
+			{% endif %}
+
+			<div class="post-content">
+				{{ content }}
+			</div>
+
+		</div>
+
+	</div>
+</section>

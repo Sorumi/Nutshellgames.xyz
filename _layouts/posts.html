@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<section id="posts" class="w-full hmin-screen  header-next">
+    <div class="posts-wrapper container">
+        <!-- <div class="flex flex-row justify-between">
+            <h2 class="posts-title text-m">
+                {{ page.title }}
+            </h2>
+        </div> -->
+
+        <div class="posts-grid grid sm:grid-cols-1 grid-cols-3">
+            {% for post in site.posts %}
+            {% include post_card.html post=post %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

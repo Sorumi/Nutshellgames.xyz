@@ -1,0 +1,35 @@
+<div class="product-card card card-shadow flex flex-col justify-between">
+
+    <div class="product-card-flex flex flex-row sm:flex-col justify-between">
+
+        <div class="product-card-left flex flex-col items-center">
+
+            <!-- <div class="product-card-icon w-full"
+                style="background-image: url('{{ include.product.icon }}')">
+            </div> -->
+<!-- <div> -->
+            <img class="product-card-icon w-full" src="{{ include.product.icon}}" />
+            <img class="product-card-icon w-full" src="{{ include.product.logo}}" />
+<!-- </div> -->
+            <!-- <div class="product-card-logo w-full"
+                style="background-image: url('{{ include.product.logo }}')">
+            </div> -->
+
+        </div>
+        <div class="product-card-right">
+            {{ include.product.content }}
+        </div>
+
+        <!-- <a href="{{ include.post.url | relative_url }}"">
+            <h2 class="post-card-title text-l">
+                {{ include.post.title }}
+            </h2>
+        </a> -->
+
+    </div>
+
+    <div class="flex flex-col justify-between">
+
+    </div>
+
+</div>
