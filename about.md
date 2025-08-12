@@ -1,8 +1,8 @@
 ---
 layout: page
 title: 联系我们
-nav: true
-nav_order: 3
+header: true
+header_order: 3
 ---
 
 

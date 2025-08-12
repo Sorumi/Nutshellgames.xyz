@@ -600,10 +600,116 @@ table td {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background: #816E63;
+	color: #F5F0E9;
+	font-size: 16px;
 }
 
+#footer a {
+	color: #F5F0E9;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+	text-underline-offset: 5px;
+	transition: .5s;
+}
 
 #footer p {
-	font-size: 16px;
-	color: #F5F0E9;
+	color: #E1D3C0;
+}
+
+.footer-nav {
+	margin-bottom: 40px;
+}
+
+.footer-nav-item {
+	padding-inline: 10px;
+	line-height: 120%;
+}
+
+.footer-nav-item:first-child {
+	padding-left: 0;
+}
+
+.footer-nav-item:not(:first-child) {
+	border-left: 1px solid #fff;
+}
+
+/* 
+Legal
+ */
+
+.legal-body {
+	background-color: #f8f8f7;
+}
+
+.legal-header {
+	padding-block: 30px;
+	text-align: center;
+}
+
+.legal-footer {
+	padding-block: 30px;
+	text-align: center;
+}
+
+.legal-body {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	a,
+	blockquote,
+	pre,
+	hr,
+	dl,
+	dd,
+	ol,
+	ul {
+		font-size: 18px;
+		color: #555;
+	}
+
+	h1 {
+		color: #222;
+		font-size: 20px;
+		font-weight: 600;
+		text-align: center;
+		margin: 20px 0;
+	}
+
+	h2 {
+		color: #222;
+		font-size: 20px;
+		font-weight: 600;
+		margin: 20px 0;
+	}
+
+
+	h3,
+	h4 {
+		color: #222;
+		font-size: 20px;
+		font-weight: 550;
+		margin: 20px 0;
+	}
+
+	h5 {
+		color: #333;
+		font-weight: 500;
+	}
+
+	h6 {
+
+		color: #444;
+		font-weight: 500;
+	}
+
+	p {
+		margin: 20px 0;
+	}
 }

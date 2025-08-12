@@ -1,8 +1,8 @@
 ---
 layout: posts
 title: 资讯动态
-nav: true
-nav_order: 2
+header: true
+header_order: 2
 ---
 
 

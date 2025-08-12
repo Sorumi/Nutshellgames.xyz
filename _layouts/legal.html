@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+
+<body class="legal-body">
+
+    <div class="legal-header container">
+        <img class="header-logo" src="{{ site.logo | relative_url }}" alt="logo" />
+    </div>
+
+    <div class="legal-content container">
+        {{ content }}
+    </div>
+
+    <div class="legal-footer container">
+        {% capture footer %}
+        {% include footer_legal.md %}
+        {% endcapture %}
+
+        {{ footer | markdownify }}
+    </div>
+
+</body>

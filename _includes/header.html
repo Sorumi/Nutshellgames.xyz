@@ -8,7 +8,7 @@
 			<!-- <p>{{ site.title }}</p> -->
 		</a>
 		<div class="header-nav flex">
-			{% assign pages = site.pages | where: 'nav', true | sort: 'nav_order' %}
+			{% assign pages = site.pages | where: 'header', true | sort: 'header_order' %}
 			{% for page in pages %}
 			
 			<div>
