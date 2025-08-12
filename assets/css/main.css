@@ -83,32 +83,32 @@ li>ol {
  * Headings
  */
 h1 {
-	font-size: 32px;
+	font-size: 22px;
 	font-weight: 500;
 	margin-top: 30px;
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 22px;
 	font-weight: 500;
 	margin-top: 30px;
 }
 
 h3 {
-	font-size: 28px;
+	font-size: 20px;
 	font-weight: 500;
 	margin-top: 30px;
 }
 
 h4 {
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 500;
 	margin-top: 30px;
 	/* color: rgba(0, 0, 0, 0.7); */
 }
 
 h5 {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 500;
 	margin-top: 30px;
 	/* color: rgba(0, 0, 0, 0.7); */
@@ -416,6 +416,10 @@ table td {
 	background-color: #F5F1E2;
 }
 
+#products {
+	background-color: #F5F1E2;
+}
+
 #page {
 	background-color: #F5F1E2;
 }
@@ -423,6 +427,13 @@ table td {
 .card-wrapper {
 	/* padding: 100px 0; */
 	padding-block: 100px;
+}
+
+@media screen and (max-width: 880px) {
+	.card-wrapper {
+		padding-block: 60px;
+	}
+
 }
 
 .card {
@@ -434,11 +445,19 @@ table td {
 	padding-block: 100px;
 }
 
+@media screen and (max-width: 880px) {
+	.posts-wrapper {
+		padding-block: 60px;
+	}
+
+}
+
 .posts-wrapper-title {
 	margin-bottom: 60px;
 }
 
 .posts-title {
+	margin: 0;
 	color: #7C645B;
 }
 
@@ -460,23 +479,24 @@ table td {
 }
 
 .post-card {
-	padding: 20px;
+	/* padding: 20px; */
+	padding: 5%
 	/* background-color: #FFFDF7; */
 }
 
 .post-card-title {
 	margin: 0;
-	padding-block: 30px;
+	padding-block: 20px;
 	color: #705D56;
 }
 
 .post-card-category {
-	padding-block: 10px;
+	padding-block: 8px;
 	color: #9A867F;
 }
 
 .post-card-date {
-	padding-block: 5px;
+	/* padding-block: 5px; */
 	color: #C6BBAA;
 	letter-spacing: 1px;
 }
@@ -484,17 +504,17 @@ table td {
 
 .post-title {
 	margin: 0;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	color: #705D56;
 }
 
 .post-category {
-	padding-block: 10px;
+	padding-block: 8px;
 	color: #9A867F;
 }
 
 .post-date {
-	padding-block: 5px;
+	/* padding-block: 5px; */
 	color: #C6BBAA;
 	letter-spacing: 1px;
 }
