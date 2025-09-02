@@ -1,8 +1,8 @@
 ---
 # layout: product
 name: 方寸小屋
-icon: /assets/images/products/cube_room/icon.png
-logo: /assets/images/products/cube_room/logo.png
+icon: /assets/images/products/cuberoom/cuberoom_icon.png
+logo: /assets/images/products/cuberoom/cuberoom_logo.png
 description: 在方寸之间，构建百变风格小屋
 ---
 

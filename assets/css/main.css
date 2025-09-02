@@ -624,15 +624,6 @@ table td {
 	font-size: 16px;
 }
 
-#footer a {
-	color: #F5F0E9;
-}
-
-#footer a:hover {
-	text-decoration: underline;
-	text-underline-offset: 5px;
-	transition: .5s;
-}
 
 #footer p {
 	color: #E1D3C0;
@@ -652,9 +643,28 @@ table td {
 }
 
 .footer-nav-item:not(:first-child) {
-	border-left: 1px solid #fff;
+	border-left: 1.5px solid #F5F0E9;
 }
 
+.footer-nav a {
+	color: #F5F0E9;
+}
+
+.footer-nav a:hover {
+	text-decoration: underline;
+	text-underline-offset: 5px;
+	transition: .5s;
+}
+
+.footer-content p, .footer-content a {
+	color: #E1D3C0;
+}
+
+.footer-content a:hover {
+	text-decoration: underline;
+	text-underline-offset: 5px;
+	transition: .5s;
+}
 /* 
 Legal
  */

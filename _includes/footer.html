@@ -1,7 +1,7 @@
 <div id="footer" class="w-full">
 	<div class="container">
 
-		<div class="footer-nav flex">
+		<!-- <div class="footer-nav flex">
 			{% assign pages = site.pages | where: 'footer', true | sort: 'footer_order' %}
 			{% for page in pages %}
 
@@ -10,9 +10,9 @@
 					{{ page.title }}
 				</a>
 			{% endfor %}
-		</div>
+		</div> -->
 
-		<div>
+		<div class="footer-content">
 			{% capture footer %}
 			{% include footer.md %}
 			{% endcapture %}
