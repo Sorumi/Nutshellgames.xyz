@@ -38,5 +38,5 @@ collections:
 languages: ["en"]
 active_lang: "zh"
 # permalink: pretty
-permalink: /:title
+permalink: /posts/:title
 
