@@ -6,6 +6,6 @@ header_order: 3
 ---
 
 
-邮箱：CubeRoom0@gmail.com
+邮箱：sorumi@nutshellgames.xyz
 
 电话：15221842533

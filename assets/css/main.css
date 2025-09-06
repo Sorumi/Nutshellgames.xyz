@@ -223,7 +223,7 @@ table td {
 	flex-direction: column;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 920px) {
 	.sm\:flex-col {
 		flex-direction: column;
 	}
@@ -251,7 +251,7 @@ table td {
 	}
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 920px) {
 	.sm\:grid-cols-1 {
 		grid-template-columns: repeat(1, minmax(0, 1fr));
 	}
@@ -340,7 +340,7 @@ table td {
 	}
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 920px) {
 	.container {
 		width: 90%;
 		/* padding-left: 5%; */
@@ -358,7 +358,7 @@ table td {
 	padding-block-start: 100px;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 920px) {
 	.header-next {
 		padding-block-start: 130px;
 	}
@@ -371,7 +371,7 @@ table td {
 	background-repeat: repeat;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 920px) {
 	#home-main {
 		padding-block: 130px;
 	}
@@ -388,7 +388,7 @@ table td {
 	text-align: left;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 920px) {
 	.home-product-intro {
 		width: 100%;
 		text-align: center;
@@ -429,7 +429,7 @@ table td {
 	padding-block: 100px;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 920px) {
 	.card-wrapper {
 		padding-block: 60px;
 	}
@@ -445,7 +445,7 @@ table td {
 	padding-block: 100px;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 920px) {
 	.posts-wrapper {
 		padding-block: 60px;
 	}
@@ -555,7 +555,7 @@ table td {
 	width: 70%;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 920px) {
 	.product-card-flex {
 		align-items: center;
 	}
@@ -596,7 +596,7 @@ table td {
 }
 
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 920px) {
 	.header-nav-item {
 		padding-inline: 10px;
 		font-size: 18px;
@@ -621,16 +621,16 @@ table td {
 	padding-bottom: 50px;
 	background: #816E63;
 	color: #F5F0E9;
-	font-size: 16px;
 }
 
 
-#footer p {
-	color: #E1D3C0;
+#footer p, #footer a{
+	font-size: 14px;
 }
 
 .footer-nav {
 	margin-bottom: 40px;
+	color: #E1D3C0;
 }
 
 .footer-nav-item {
